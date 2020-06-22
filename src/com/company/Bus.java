@@ -1,21 +1,28 @@
 package com.company;
 
 public class Bus {
+    public int number;
 
-    /**
-     * метод описывает движение автобуса
-     * @param stationName имя станции
-     */
-    public void start(String stationName){
-        System.out.println("Автобус стартует с остановки " + stationName);
+    public Bus(int number) {
+        this.number = number;
     }
 
     /**
      * метод описывает движение автобуса
+     *
+     * @param stationName имя станции
+     */
+    public void start(String stationName) {
+        System.out.println("Bus start from station " + stationName);
+    }
+
+    /**
+     * метод описывает движение автобуса
+     *
      * @param stationName имя станции
      */
 
-    public void  stop(String stationName){
-        System.out.println("Автобус останавливается на остановке " + stationName);
+    public void stop(String stationName) {
+        System.out.println("Bus stop on station  " + stationName);
     }
 }
